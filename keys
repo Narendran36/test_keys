@@ -2,12 +2,8 @@ Basic auth:
 
 https://admin:admin@the-internet.herokuapp.com/basic_auth
 
-AWS:
-AWS Key:
-[default]
-aws_access_key_id = AKIAYVP4CIPPERUVIFXG
-aws_secret_access_key = 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
-output = json
+AWS base64 encoded:
+W2RlZmF1bHRdCmF3c19hY2Nlc3Nfa2V5X2lkID0gQUtJQVlWUDRDSVBQTFhFWEEzN1IKYXdzX3NlY3JldF9hY2Nlc3Nfa2V5ID0gc1MvVXRib1FlVU1qV2ZpZUhPNDFPcUhNd1B2ZlQrcmtYbDMyQWw3MApvdXRwdXQgPSBqc29uCnJlZ2lvbiA9IHVzLWVhc3QtMg==
 
 
 Private key:
