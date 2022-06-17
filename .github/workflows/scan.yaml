@@ -12,3 +12,5 @@ jobs:
         run: docker run -v "$PWD:/pwd" trufflesecurity/trufflehog:latest filesystem --directory=/pwd -j > trufflehog_report.json
       - name: Upload reports
         run: pip install requests; rm upload-results.py || true;chmod +x upload-results.py; python3 upload-results.py --host 127.0.0.1:8080 --api_key 3612f193be594f6ae0e1791555189be9e2d35258 --engagement_name "security-engagement" --result_file trufflehog --product_name "S3CUR1TY REPORT" --scanner "Trufflehog Scan"
+      - name: Hello
+        run: echo "Success!"
