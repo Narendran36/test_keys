@@ -11,4 +11,4 @@ jobs:
       - name: Check for secrets
         run: rm trufflehog_report.json; pip install truffleHog3;trufflehog3 -f JSON -o trufflehog_report.json || true; cat trufflehog_report.json
       - name: Upload reports
-        run: pip install requests; wget https://raw.githubusercontent.com/Narendran36/webapp/master/upload-results.py -O upload-results.py; chmod +x upload-results.py; python3 upload-results.py --host 3.108.45.248:8080 --api_key 7faa299f8e35b045f83f2f64e76e962759b1341e --engagement_name "security-engagement" --result_file trufflehog_report.json --product_name "S3CUR1TY REPORT" --scanner "Trufflehog Scan"
+        run: pip install requests; wget https://raw.githubusercontent.com/devopssecure/webapp/master/upload-results.py -O upload-results.py; -O upload-results.py; chmod +x upload-results.py; python3 upload-results.py --host 3.108.45.248:8080 --api_key 7faa299f8e35b045f83f2f64e76e962759b1341e --engagement_name "security-engagement" --result_file trufflehog_report.json --product_name "S3CUR1TY REPORT" --scanner "Trufflehog Scan"
