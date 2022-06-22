@@ -11,4 +11,4 @@ jobs:
       - name: Check for secrets
         run: docker run -v "$PWD:/pwd" trufflesecurity/trufflehog:latest filesystem --directory=/pwd -j > trufflehog_report.json
       - name: Upload reports
-        run: pip install requests; wget https://raw.githubusercontent.com/Narendran36/webapp/master/upload-results.py -O upload-results.py; chmod +x upload-results.py; python3 upload-results.py --host 3.108.45.248:8080 --api_key 7faa299f8e35b045f83f2f64e76e962759b1341e --engagement_name "security-engagement" --result_file trufflehog_report.json --product_name "S3CUR1TY REPORT" --scanner "Trufflehog Scan"
+        run: pip install requests; wget https://raw.githubusercontent.com/devopssecure/webapp/master/upload-results.py -O upload-results.py; chmod +x upload-results.py; python3 upload-results.py --host 3.108.45.248:8080 --api_key 7faa299f8e35b045f83f2f64e76e962759b1341e --engagement_name "security-engagement" --result_file trufflehog_report.json --product_name "S3CUR1TY REPORT" --scanner "Trufflehog Scan"
